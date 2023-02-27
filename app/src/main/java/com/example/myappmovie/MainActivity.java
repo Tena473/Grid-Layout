@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                             //Creating array for data
                             String[] data = new String[2];
                             data[0] = name;
-                            data[1] = password;               //ໃສ່ Ip IPv4 Address ຂອງເຄື່ອງຄອມພີວເຕີ ອາຈານ
-                            PutData putData = new PutData("http://192.168.100.5/android1/login.php", "POST", field, data);
+                            data[1] = password;
+                            PutData putData = new PutData("https://mobileshop01.000webhostapp.com/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
